@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_usual_calculator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.mycalculator.UsualCalculator">
+
+
+    <TextView
+        android:id="@+id/tvCalculation"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="16dp"
+        tools:text="5 + 3"
+        android:fontFamily="casual"
+        android:gravity="right|center"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        tools:text="8"
+        android:textStyle="bold"
+        android:gravity="right|center"
+        android:fontFamily="casual"
+        android:layout_below="@id/tvCalculation"
+        android:textSize="40sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvResult"
+        android:layout_margin="16dp">
+
+        <Button
+            android:id="@+id/btnNumPad1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="1"/>
+
+        <Button
+            android:id="@+id/btnNumPad2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_toRightOf="@id/btnNumPad1"
+            android:text="2"/>
+
+        <Button
+            android:id="@+id/btnNumPad3"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_toRightOf="@id/btnNumPad2"
+            android:text="3"/>
+
+        <Button
+            android:id="@+id/btnNumPad4"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/btnNumPad1"
+            android:text="4"/>
+
+        <Button
+            android:id="@+id/btnNumPad5"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_toRightOf="@id/btnNumPad4"
+            android:layout_below="@id/btnNumPad2"
+            android:text="5"/>
+
+        <Button
+            android:id="@+id/btnNumPad6"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_toRightOf="@id/btnNumPad5"
+            android:layout_below="@id/btnNumPad3"
+            android:text="6"/>
+
+        <Button
+            android:id="@+id/btnNumPad7"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/btnNumPad4"
+            android:text="7"/>
+
+        <Button
+            android:id="@+id/btnNumPad8"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_toRightOf="@id/btnNumPad7"
+            android:layout_below="@id/btnNumPad5"
+            android:text="8"/>
+
+        <Button
+            android:id="@+id/btnNumPad9"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_toRightOf="@id/btnNumPad8"
+            android:layout_below="@id/btnNumPad6"
+            android:text="9"/>
+
+        <Button
+            android:id="@+id/btnNumPad0"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_toRightOf="@id/btnNumPad7"
+            android:layout_below="@id/btnNumPad8"
+            android:text="0"/>
+
+        <Button
+            android:id="@+id/btnNumPadEqual"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:textColor="#ff0000"
+            android:layout_toRightOf="@id/btnNumPad0"
+            android:layout_below="@id/btnNumPad9"
+            android:text="="/>
+
+        <Button
+            android:id="@+id/btnNumPadPoint"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/btnNumPad7"
+            android:text="."/>
+
+        <Button
+            android:id="@+id/btnNumPadSummation"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_toRightOf="@id/btnNumPad6"
+            android:text="+"/>
+
+        <Button
+            android:id="@+id/btnNumPadSubtraction"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_toRightOf="@id/btnNumPad6"
+            android:layout_below="@id/btnNumPadSummation"
+            android:text="-"/>
+
+        <Button
+            android:id="@+id/btnNumPadMultiplication"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_toRightOf="@id/btnNumPad9"
+            android:layout_below="@id/btnNumPadSubtraction"
+            android:text="×"/>
+
+        <Button
+            android:id="@+id/btnNumPadDivision"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_toRightOf="@id/btnNumPadEqual"
+            android:layout_below="@id/btnNumPadMultiplication"
+            android:text="÷"/>
+
+
+        <Button
+            android:id="@+id/btnNumPadClear"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_toRightOf="@id/btnNumPadSummation"
+            android:text="C"/>
+
+        <Button
+            android:id="@+id/btnNumPadClearAll"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_toRightOf="@id/btnNumPadSummation"
+            android:layout_below="@id/btnNumPadClear"
+            android:text="CA"/>
+
+        <Button
+            android:id="@+id/btnNumPadMod"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_toRightOf="@id/btnNumPadSummation"
+            android:layout_below="@id/btnNumPadClearAll"
+            android:text="%"/>
+
+        <Button
+            android:id="@+id/btnNumPadFactorial"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_toRightOf="@id/btnNumPadSummation"
+            android:layout_below="@id/btnNumPadMod"
+            android:text="!"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
